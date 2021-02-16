@@ -1,0 +1,115 @@
+@import "../libs/bootstrap-reboot.min"
+@import "../libs/stylesheet"
+@import "../libs/slick"
+@import "../libs/animate"
+*
+    font-family: "Museo Sans Cyrl", Sans-serif
+
+@import "../base/variables"
+
+.container 
+    max-width: 950px    
+    margin: 0 auto
+
+@import "../base/animation"
+@import "../base/media"
+@import "../block/promo"
+@import "../block/header"
+@import "../block/buttons"
+@import "../block/title"
+@import "../block/edge"
+@import "../block/consultation"
+@import "../block/forms"
+@import "../block/carousel"
+@import "../block/catalog"
+@import "../block/feed"
+@import "../block/footer"
+@import "../block/modal"
+@import "../block/pageup"
+
+
+@media (max-width:768px)
+    .promo
+        &__wraper
+            display: flex
+            flex-direction: column
+            align-items: center
+    .edge
+        &__wraper
+            flex-direction: column
+            align-items: center
+    .title
+        &_left
+            font-size: 25px
+    .consultation
+        &__desc
+            font-size: 17px
+    .carousel
+        display: none
+
+@media (max-width:576px)
+    .header
+        &__phone
+            font-size: 16px 
+        &__title    
+            margin-top: 10px
+        &__text
+            margin-top: 6px
+            margin-bottom: 18px
+    .catalog
+        &-item
+            width: 280px
+    .feed
+        &__text
+            margin-left: 27px
+@media (max-width:425px)
+    .header
+        &__official 
+            display: none
+    .promo
+        &__header   
+            font-size: 30px
+        &__subheader
+            font-size: 17px
+    .title
+        &_left
+            font-size: 17px
+            line-height: 27px   
+        br
+            display: none
+    .consultation
+        br
+            display: none
+    .catalog
+        padding-top: 20px
+        &-item
+            margin: auto
+        &__tab
+            width: 120px
+            line-height: 40px
+            height: 40px
+            font-size: 11px
+    .feed
+        &__item 
+            display: block
+        img
+            display: block
+            margin: 0 auto
+            margin-bottom: 10px
+    .footer
+        &__info 
+            width: 100%
+        &__addr 
+            font-size: 17px
+
+@media (max-width:375px)
+    .promo
+        &__icon
+            display: none
+    .header
+        &__contacts
+            display: none
+
+        
+
+
